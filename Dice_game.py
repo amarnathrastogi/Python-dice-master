@@ -64,17 +64,17 @@ while True:
         for i in range(rounds):
 
             if turn == "player":
-                input('\nPress Enter to roll dice\n')
+                input('\n' + name + ' , enter to roll dice\n')
                 N = random.choice(Dice)
-                print(name, 'got - ', N , '🎲')
+                print(name, 'got - ', N, '🎲')
                 print("\n------------------------------\n")
                 total_player += N
                 turn = "computer"
 
             else:
-                input('\nPress Enter to roll dice\n')
+                input('\nComputer Enter to roll dice\n')
                 N = random.choice(Dice)
-                print('Computer got - ', N , '🎲')
+                print('Computer got - ', N, '🎲')
                 print("\n------------------------------\n")
                 total_computer += N
                 turn = "player"
@@ -88,7 +88,7 @@ while True:
 
         print("\n------------------------------\n")
 
-        print(name , 'score - ', total_player)
+        print(name, 'score - ', total_player)
         print('Computer score - ', total_computer)
 
         print("\n---------------x---------------\n")
@@ -120,17 +120,17 @@ while True:
         for i in range(rounds):
 
             if turn == "player1":
-                input('Press Enter to roll dice')
+                input('\n' + name1 + ' , enter to roll dice\n')
                 N = random.choice(Dice)
-                print(name1, 'got - ', N , '🎲')
+                print(name1, 'got - ', N, '🎲')
                 print("\n------------------------------\n")
                 total_player1 += N
                 turn = "player2"
 
             else:
-                input('Press Enter to roll dice')
+                input('\n' + name2 + ' , enter to roll dice\n')
                 N = random.choice(Dice)
-                print(name2, 'got - ', N , '🎲')
+                print(name2, 'got - ', N, '🎲')
                 print("\n------------------------------\n")
                 total_player2 += N
                 turn = "player1"
@@ -146,8 +146,6 @@ while True:
 
         print(name1, 'score - ', total_player1)
         print(name2, 'score - ', total_player2)
-
-        print("\n---------------x---------------\n")
 
     else:
         print("Invalid choice!")
